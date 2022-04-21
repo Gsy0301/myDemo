@@ -4,6 +4,7 @@ import math
 from flask import Flask
 from flask import request
 import json
+import time
 
 # """第一部分，初始化：所有的Flask都必须创建程序实例，
 # web服务器使用wsgi协议，把客户端所有的请求都转发给这个程序实例
@@ -24,6 +25,8 @@ def analysis_data():
     call_back = '接收到了参数'
     param = request.get_data()
     print(param)
+    time.sleep(100)
+    print("延迟后:{}".format(param))
     return call_back
 
 

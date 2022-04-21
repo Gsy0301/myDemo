@@ -10,13 +10,7 @@ java 后端使用 io.github.openfeign post/get python创建的http接口
 
 python 使用 flask 创建简单的web服务
 
-## flaskDemoSpringCloud
 
-java 后端使用spring-cloud-starter-openfeign post/get python创建的http接口
-
-python 使用 flask 创建简单的web服务
-
-以上两种效果
 
 python端
 
