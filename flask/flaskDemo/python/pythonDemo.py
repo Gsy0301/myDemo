@@ -25,9 +25,25 @@ def analysis_data():
     call_back = '接收到了参数'
     param = request.get_data()
     print(param)
-    time.sleep(100)
     print("延迟后:{}".format(param))
-    return call_back
+    # call_back = {}
+    # call_back['cx'] = "0"
+    # call_back['cy'] = "0"
+    # call_back['width'] = "0"
+    # call_back['height'] = "0"
+    # call_back['type'] = "0"
+
+    call_back = []
+    data1 = {}
+    data1['cx'] = "0"
+    data1['cy'] = "0"
+    data1['width'] = "0"
+    data1['height'] = "0"
+    data1['type'] = "0"
+
+    call_back.append(data1)
+    call_back.append(data1)
+    return json.dumps(call_back)
 
 
 #  第三部分：程序实例用run方法启动flask集成的开发web服务器

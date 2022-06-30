@@ -27,7 +27,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!--feign-->
         <!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-core -->
         <dependency>
