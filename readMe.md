@@ -2,7 +2,13 @@
 
 [toc]
 
-# flask 
+# algorithm
+
+## acm
+
+acm模式对一些的数据的处理demo
+
+# flask
 
 ## flaskDemo
 
@@ -19,3 +25,15 @@ python端
 java端
 
 ![](./mdResource/flaskDemo-java.png)
+
+# python
+
+## Monitor
+
+Linux使用python监视GPU使用情况，并将之通过右键发送信息
+
+# spring
+
+## generator
+
+mybatis plus 代码生成器demo
