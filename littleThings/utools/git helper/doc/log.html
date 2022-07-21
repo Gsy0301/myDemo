@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h2># 显示commit历史，以及每次commit发生变更的文件</h2>
+<h2>$ git log --stat</h2>
+<h2></h2>
+<h2># 搜索提交历史，根据关键词</h2>
+<h2>$ git log -S [keyword]</h2>
+<h2></h2>
+<h2># 显示某个commit之后的所有变动，每个commit占据一行</h2>
+<h2>$ git log [tag] HEAD --pretty=format:%s</h2>
+<h2></h2>
+<h2># 显示某个commit之后的所有变动，其"提交说明"必须符合搜索条件</h2>
+<h2>$ git log [tag] HEAD --grep feature</h2>
+<h2></h2>
+<h2># 显示某个文件的版本历史，包括文件改名</h2>
+<h2>$ git log --follow [file]</h2>
+<h2>$ git whatchanged [file]</h2>
+<h2></h2>
+<h2># 显示指定文件相关的每一次diff</h2>
+<h2>$ git log -p [file]</h2>
+<h2></h2>
+<h2># 显示过去5次提交</h2>
+<h2>$ git log -5 --pretty --oneline</h2>
+<h2></h2>
+<h2># 显示所有提交过的用户，按提交次数排序</h2>
+<h2>$ git shortlog -sn</h2>
+<h2></h2>
+<h2># 显示指定文件是什么人在什么时间修改过</h2>
+<h2>$ git blame [file]</h2>
+<h2></h2>
+<h2></h2>
+<h2># 显示某次提交的元数据和内容变化</h2>
+<h2>$ git show [commit]</h2>
+<h2></h2>
+<h2># 显示某次提交发生变化的文件</h2>
+<h2>$ git show --name-only [commit]</h2>
+<h2></h2>
+<h2># 显示某次提交时，某个文件的内容</h2>
+<h2>$ git show [commit]:[filename]</h2>
+<h2></h2>
+<h2># 显示当前分支的最近几次提交</h2>
+<h2>$ git reflog</h2>
+</body>
+</html>

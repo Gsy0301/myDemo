@@ -37,3 +37,15 @@ Linux使用python监视GPU使用情况，并将之通过右键发送信息
 ## generator
 
 mybatis plus 代码生成器demo
+
+# littleThings
+存放一些个人写的小东西
+## utools
+个人开发的utools插件 源码
+### git helper
+git命令小助手，便于搜索git命令，方便学习
+其中：githelper为java代码，把md文件转为utools插件需要对应的html和js代码
+git helper为utools源码
+目前效果如下：
+![](./mdResource/githelper-1.png)
+![](./mdResource/githelper-2.png)

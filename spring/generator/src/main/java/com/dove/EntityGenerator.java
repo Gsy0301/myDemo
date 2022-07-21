@@ -18,6 +18,7 @@ import java.util.Scanner;
  * @version V1.0
  * @since 2022/6/30-22:11
  */
+@SuppressWarnings("all")
 public class EntityGenerator {
     public static void main(String[] args) {
 
@@ -109,6 +110,7 @@ public class EntityGenerator {
                             .enableHyphenStyle() //url中驼峰转连字符
                             .entityBuilder() //开启实体类配置
                             .enableLombok() //开启lombok
+
                     // .addTableFills(new Column(create_time, FieldFill.INSERT)) //配置添加自动填充字段
                     // .addTableFills(new Column(update_time, FieldFill.INSERT_UPDATE)) //添加和更新配置自动填充字段
                     //.enableChainModel()//开启lombok链式操作@Accessors(chain = true)

@@ -1,0 +1,15 @@
+{
+	"version": "1.0.0",
+	"pluginName": "git helper",
+	"logo": "git-helper.png",
+    "preload": "preload.js",
+	"homepage": "http://weilian.fun",
+	"author": "微恋",
+	"features": [
+		{
+		  "code": "git-helper",
+		  "explain": "git命令助手",
+			"cmds":["git", "githelper"]
+		}
+	]
+}
