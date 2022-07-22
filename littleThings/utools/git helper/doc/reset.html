@@ -1,52 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../style/basic_layout.css" rel="stylesheet" type="text/css">
+    <link href="../style/common_style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-<h2># 恢复暂存区的指定文件到工作区</h2>
-<h2>$ git checkout [file]</h2>
-<h2></h2>
-<h2># 恢复某个commit的指定文件到暂存区和工作区</h2>
-<h2>$ git checkout [commit] [file]</h2>
-<h2></h2>
-<h2># 恢复暂存区的所有文件到工作区</h2>
-<h2>$ git checkout .</h2>
-<h2></h2>
-<h2># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</h2>
-<h2>$ git reset [file]</h2>
-<h2></h2>
-<h2># 重置暂存区与工作区，与上一次commit保持一致</h2>
-<h2>$ git reset --hard</h2>
-<h2></h2>
-<h2># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</h2>
-<h2>$ git reset [commit]</h2>
-<h2></h2>
-<h2># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</h2>
-<h2>$ git reset --hard [commit]</h2>
-<h2></h2>
-<h2># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</h2>
-<h2>$ git reset --keep [commit]</h2>
-<h2></h2>
-<h2># 新建一个commit，用来撤销指定commit</h2>
-<h2></h2>
-<h2># 后者的所有变化都将被前者抵消，并且应用到当前分支</h2>
-<h2>$ git revert [commit]</h2>
-<h2></h2>
-<h2># 恢复最后一次提交的状态</h2>
-<h2>$ git revert HEAD</h2>
-<h2></h2>
-<h2># 暂时将未提交的变化移除，稍后再移入</h2>
-<h2>$ git stash</h2>
-<h2>$ git stash pop</h2>
-<h2></h2>
-<h2># 列所有stash</h2>
-<h2>$ git stash list</h2>
-<h2></h2>
-<h2># 恢复暂存的内容</h2>
-<h2>$ git stash apply</h2>
-<h2></h2>
-<h2># 删除暂存区</h2>
-<h2>$ git stash drop</h2>
+    <div id="container">
+<table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git checkout [file]</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 恢复暂存区的指定文件到工作区</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git checkout [commit] [file]</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 恢复某个commit的指定文件到暂存区和工作区</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git checkout .</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 恢复暂存区的所有文件到工作区</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git reset [file]</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git reset --hard</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 重置暂存区与工作区，与上一次commit保持一致</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git reset [commit]</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git reset --hard [commit]</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git reset --keep [commit]</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git revert [commit]</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 后者的所有变化都将被前者抵消，并且应用到当前分支# 新建一个commit，用来撤销指定commit</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git revert HEAD</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 恢复最后一次提交的状态</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git stash</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 暂时将未提交的变化移除，稍后再移入</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git stash pop</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"></td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git stash list</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 列所有stash</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git stash apply</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 恢复暂存的内容</td>
+            </tr>
+        </table><table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <th colspan="2" style="text-align: left;">$ git stash drop</th>
+            </tr>
+            <tr>
+                <td width="80" height="30">注解</td>
+                <td style="text-align:left"># 删除暂存区    </div>
+    <div style="text-align:center;">
+    </div>
 </body>
+
 </html>

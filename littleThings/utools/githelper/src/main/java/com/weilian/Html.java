@@ -22,4 +22,5 @@ public class Html {
     private String name;
     private String zhName;
     private List<String> code;
+    private List<String> newCode;
 }
